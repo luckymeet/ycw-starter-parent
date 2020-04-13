@@ -1,0 +1,17 @@
+E:\studyspace\seed\ycw-starter-parent\common\src\main\java\com\ycw\common\base\BaseCrudMapper.java
+E:\studyspace\seed\ycw-starter-parent\common\src\main\java\com\ycw\common\utils\SpringUtils.java
+E:\studyspace\seed\ycw-starter-parent\common\src\main\java\com\ycw\common\interceptor\web\PageParamsMethodArgumentResolver.java
+E:\studyspace\seed\ycw-starter-parent\common\src\main\java\com\ycw\common\page\PageParams.java
+E:\studyspace\seed\ycw-starter-parent\common\src\main\java\com\ycw\common\config\MyBatisPlusConfiguration.java
+E:\studyspace\seed\ycw-starter-parent\common\src\main\java\com\ycw\common\base\BaseController.java
+E:\studyspace\seed\ycw-starter-parent\common\src\main\java\com\ycw\common\utils\BeanHandleUtils.java
+E:\studyspace\seed\ycw-starter-parent\common\src\main\java\com\ycw\common\base\BaseVO.java
+E:\studyspace\seed\ycw-starter-parent\common\src\main\java\com\ycw\common\exception\GlobalExceptionHandler.java
+E:\studyspace\seed\ycw-starter-parent\common\src\main\java\com\ycw\common\config\WebMvcConfig.java
+E:\studyspace\seed\ycw-starter-parent\common\src\main\java\com\ycw\common\response\ResponseCode.java
+E:\studyspace\seed\ycw-starter-parent\common\src\main\java\com\ycw\common\base\BaseEntity.java
+E:\studyspace\seed\ycw-starter-parent\common\src\main\java\com\ycw\common\config\TransactionManagerConfig.java
+E:\studyspace\seed\ycw-starter-parent\common\src\main\java\com\ycw\common\exception\MsgException.java
+E:\studyspace\seed\ycw-starter-parent\common\src\main\java\com\ycw\common\response\ResponseVO.java
+E:\studyspace\seed\ycw-starter-parent\common\src\main\java\com\ycw\common\constants\CommonConstants.java
+E:\studyspace\seed\ycw-starter-parent\common\src\main\java\com\ycw\common\aop\ServiceAop.java
