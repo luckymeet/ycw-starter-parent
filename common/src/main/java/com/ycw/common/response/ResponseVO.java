@@ -7,6 +7,20 @@ import com.ycw.common.utils.SpringUtils;
 import brave.Tracer;
 import lombok.ToString;
 
+/**
+ * 统一响应对象
+ * @author yuminjun
+ * @date 2020/04/14 15:12:12
+ * @version 1.00
+ *
+ * @record
+ * <pre>
+ * version  author      date          desc
+ * -------------------------------------------------
+ * 1.00     yuminjun    2020/04/14    新建
+ * -------------------------------------------------
+ * </pre>
+ */
 @ToString
 public class ResponseVO<T> implements Serializable {
 

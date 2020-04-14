@@ -22,18 +22,17 @@ import org.springframework.transaction.interceptor.TransactionInterceptor;
 import lombok.extern.slf4j.Slf4j;
 
 /**
- * @类名称 TransactionManagerConfig.java
- * @类描述 全局事务配置
- * @作者 yuminjun yuminjun@lexiangbao.com
- * @创建时间 2019年9月16日 下午4:01:12
- * @版本 1.00
+ * 全局事务配置
+ * @author yuminjun
+ * @date 2020/04/14 14:43:57
+ * @version 1.00
  *
- * @修改记录
+ * @record
  * <pre>
- *     版本                       修改人 		修改日期 		 修改内容描述
- *     ----------------------------------------------
- *     1.00 	yuminjun 	2019年9月16日
- *     ----------------------------------------------
+ * version  author      date          desc
+ * -------------------------------------------------
+ * 1.00     yuminjun    2020/04/14    新建
+ * -------------------------------------------------
  * </pre>
  */
 @Slf4j

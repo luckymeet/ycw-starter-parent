@@ -18,10 +18,9 @@ public class ServiceAop {
 	}
 
 	/**
-	 * @方法名称 process
-	 * @功能描述 当方法含有PageParams参数时，使用分页查询
-	 * @作者     yuminjun
-	 * @创建时间 2019年9月25日 上午9:51:13
+	 * 当方法含有PageParams参数时，使用分页查询
+	 * @author yuminjun
+	 * @date 2020/04/14 14:43:17
 	 * @param point
 	 * @return
 	 * @throws Throwable

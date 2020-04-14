@@ -13,20 +13,18 @@ import org.springframework.web.method.support.ModelAndViewContainer;
 import com.ycw.common.page.PageParams;
 
 /**
- * @类名称 PageParamsMethodArgumentResolver.java
- * @类描述 分页方法参数处理
- * @作者 yuminjun yuminjun@lexiangbao.com
- * @创建时间 2019年9月12日 下午3:25:22
- * @版本 1.00
+ * 分页方法参数处理
+ * @author yuminjun
+ * @date 2020/04/14 14:48:12
+ * @version 1.00
  *
- * @修改记录
- *
- *       <pre>
- *     版本                       修改人 		修改日期 		 修改内容描述
- *     ----------------------------------------------
- *     1.00 	yuminjun 	2019年9月12日
- *     ----------------------------------------------
- *       </pre>
+ * @record
+ * <pre>
+ * version  author      date          desc
+ * -------------------------------------------------
+ * 1.00     yuminjun    2020/04/14    新建
+ * -------------------------------------------------
+ * </pre>
  */
 @Component
 public class PageParamsMethodArgumentResolver implements HandlerMethodArgumentResolver {

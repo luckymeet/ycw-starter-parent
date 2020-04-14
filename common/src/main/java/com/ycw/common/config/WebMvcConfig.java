@@ -10,20 +10,18 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import com.ycw.common.interceptor.web.PageParamsMethodArgumentResolver;
 
 /**
- * @类名称 WebMvcConfig.java
- * @类描述 Web拦截器配置类
- * @作者 yuminjun yuminjun@lexiangbao.com
- * @创建时间 2019年9月12日 下午3:24:51
- * @版本 1.00
+ * Web拦截器配置
+ * @author yuminjun
+ * @date 2020/04/14 14:44:26
+ * @version 1.00
  *
- * @修改记录
- *
- *       <pre>
- *     版本                       修改人 		修改日期 		 修改内容描述
- *     ----------------------------------------------
- *     1.00 	yuminjun 	2019年9月12日
- *     ----------------------------------------------
- *       </pre>
+ * @record
+ * <pre>
+ * version  author      date          desc
+ * -------------------------------------------------
+ * 1.00     yuminjun    2020/04/14    新建
+ * -------------------------------------------------
+ * </pre>
  */
 @Configuration
 public class WebMvcConfig implements WebMvcConfigurer {

@@ -6,18 +6,17 @@ import org.springframework.context.ApplicationContextAware;
 import org.springframework.stereotype.Component;
 
 /**
- * @类名称 SpringUtils.java
- * @类描述 <pre>Spring工具类</pre>
- * @作者 yuminjun yuminjun@lexiangbao.com
- * @创建时间 2019年8月8日 下午12:07:50
- * @版本 1.00
+ * Spring工具类
+ * @author yuminjun
+ * @date 2020/04/14 14:49:56
+ * @version 1.00
  *
- * @修改记录
+ * @record
  * <pre>
- *     版本                       修改人 		修改日期 		 修改内容描述
- *     ----------------------------------------------
- *     1.00 	yuminjun 	2019年8月8日
- *     ----------------------------------------------
+ * version  author      date          desc
+ * -------------------------------------------------
+ * 1.00     yuminjun    2020/04/14    新建
+ * -------------------------------------------------
  * </pre>
  */
 @Component

@@ -3,20 +3,18 @@ package com.ycw.common.page;
 import lombok.ToString;
 
 /**
- * @类名称 PageParams.java
- * @类描述 分页参数
- * @作者 yuminjun yuminjun@lexiangbao.com
- * @创建时间 2019年9月11日 下午3:52:27
- * @版本 1.00
+ * 分页参数
+ * @author yuminjun
+ * @date 2020/04/14 14:49:06
+ * @version 1.00
  *
- * @修改记录
- *
- *       <pre>
- *     版本                       修改人 		修改日期 		 修改内容描述
- *     ----------------------------------------------
- *     1.00 	yuminjun 	2019年9月11日
- *     ----------------------------------------------
- *       </pre>
+ * @record
+ * <pre>
+ * version  author      date          desc
+ * -------------------------------------------------
+ * 1.00     yuminjun    2020/04/14    新建
+ * -------------------------------------------------
+ * </pre>
  */
 @ToString
 public class PageParams {

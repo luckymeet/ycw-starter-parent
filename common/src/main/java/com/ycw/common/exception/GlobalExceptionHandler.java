@@ -25,21 +25,19 @@ import com.ycw.common.response.ResponseVO;
 
 import lombok.extern.slf4j.Slf4j;
 
-/***
- * @类名称 GlobalExceptionHandler.java
- * @类描述 全局异常处理
- * @作者 yuminjun yuminjun@lexiangbao.com
- * @创建时间 2019年8月29日 下午5:55:32
- * @版本 1.00
+/**
+ * 全局异常处理
+ * @author yuminjun yuminjun@lexiangbao.com
+ * @date 2020/04/14 14:44:46
+ * @version 1.00
  *
- * @修改记录
- *
- *       <pre>
- *     版本                       修改人 		修改日期 		 修改内容描述
- *     ----------------------------------------------
- *     1.00 	yuminjun 	2019年8月29日
- *     ----------------------------------------------
- *       </pre>
+ * @record
+ * <pre>
+ * version  author      date          desc
+ * -------------------------------------------------
+ * 1.00     yuminjun    2020/04/14    新建
+ * -------------------------------------------------
+ * </pre>
  */
 @Slf4j
 @ControllerAdvice
@@ -47,8 +45,8 @@ import lombok.extern.slf4j.Slf4j;
 public class GlobalExceptionHandler {
 
 	/** 系统自定义消息异常 */
-	@ExceptionHandler(MsgException.class)
-	public ResponseVO<Object> msgExceptionHandler(MsgException ex) {
+	@ExceptionHandler(SysException.class)
+	public ResponseVO<Object> msgExceptionHandler(SysException ex) {
 		return responseFormat(ex.getCode(), ex);
 	}
 
