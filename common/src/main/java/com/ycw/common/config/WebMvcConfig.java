@@ -3,7 +3,12 @@ package com.ycw.common.config;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
+import org.springframework.boot.web.servlet.filter.OrderedHiddenHttpMethodFilter;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.filter.HiddenHttpMethodFilter;
 import org.springframework.web.method.support.HandlerMethodArgumentResolver;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
@@ -33,5 +38,12 @@ public class WebMvcConfig implements WebMvcConfigurer {
 	public void addArgumentResolvers(List<HandlerMethodArgumentResolver> argumentResolvers) {
 		argumentResolvers.add(pageParamsMethodArgumentResolver);// 分页参数处理
 	}
+
+//	@Bean
+//	@ConditionalOnMissingBean({HiddenHttpMethodFilter.class})
+//	@ConditionalOnProperty(prefix = "spring.mvc.hiddenmethod.filter", name = "enabled", matchIfMissing = true)
+//	public OrderedHiddenHttpMethodFilter hiddenHttpMethodFilter () {
+//		return new OrderedHiddenHttpMethodFilter();
+//	}
 
 }

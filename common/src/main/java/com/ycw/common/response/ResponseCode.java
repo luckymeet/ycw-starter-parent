@@ -43,6 +43,11 @@ public enum ResponseCode {
 	ERR_SAVE (501, "ERR_501", "保存失败"),
 	ERR_UPDATE (502, "ERR_502", "修改失败"),
 	ERR_DELETE (503, "ERR_503", "删除失败"),
+	ERR_LOGIN (504, "ERR_504", "登录失败"),
+
+	ERR_504 (504, "ERR_504", "非法Token"),
+	ERR_505 (505, "ERR_505", "Token已失效"),
+	ERR_506 (506, "ERR_506", "已在其它客户端登录"),
 
 	ERR_999 (999, "ERR_999", "其他错误");
 

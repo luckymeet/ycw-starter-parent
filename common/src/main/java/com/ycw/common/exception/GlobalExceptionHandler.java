@@ -5,6 +5,7 @@ import java.util.stream.Collectors;
 
 import javax.validation.ConstraintViolation;
 import javax.validation.ConstraintViolationException;
+import javax.validation.ValidationException;
 
 import org.springframework.beans.ConversionNotSupportedException;
 import org.springframework.beans.TypeMismatchException;
@@ -54,13 +55,13 @@ public class GlobalExceptionHandler {
 	@ExceptionHandler(BindException.class)
 	public ResponseVO<Object> bindExceptionHandler(BindException ex) {
 		String message = ex.getBindingResult().getAllErrors().stream()
-				.map(DefaultMessageSourceResolvable::getDefaultMessage).collect(Collectors.joining());
+				.map(DefaultMessageSourceResolvable::getDefaultMessage).collect(Collectors.joining("；"));
 		return responseFormat(ResponseCode.ERR_417.getCode(), ex, message);
 	}
 
 	/** 请求参数格式错误 */
-	@ExceptionHandler(ConstraintViolationException.class)
-	public ResponseVO<Object> constraintViolationExceptionHandler(ConstraintViolationException ex) {
+	@ExceptionHandler(ValidationException.class)
+	public ResponseVO<Object> validationExceptionHandler(ConstraintViolationException ex) {
 		String message = ex.getConstraintViolations().stream().map(ConstraintViolation::getMessage)
 				.collect(Collectors.joining());
 		return responseFormat(ResponseCode.ERR_417.getCode(), ex, message);

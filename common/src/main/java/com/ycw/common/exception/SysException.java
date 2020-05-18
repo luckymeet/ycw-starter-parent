@@ -14,7 +14,7 @@ package com.ycw.common.exception;
  * -------------------------------------------------
  * </pre>
  */
-public class SysException extends Exception {
+public class SysException extends RuntimeException {
 
 	private static final long serialVersionUID = 1L;
 

@@ -2,10 +2,10 @@ package com.ycw.common.constants;
 
 public final class CommonConstants {
 
-	public static final int INT_YES = 1;
-	public static final int INT_NO = 0;
-	public static final int INT_ON = 1;
-	public static final int INT_OFF = 0;
+	public static final Integer INT_YES = 1;
+	public static final Integer INT_NO = 0;
+	public static final Integer INT_ON = 1;
+	public static final Integer INT_OFF = 0;
 
 	public static final String DEFAULT_CHARSET_UTF_8 = "UTF-8";
 
