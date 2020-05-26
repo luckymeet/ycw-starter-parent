@@ -10,7 +10,7 @@ import org.springframework.web.context.request.NativeWebRequest;
 import org.springframework.web.method.support.HandlerMethodArgumentResolver;
 import org.springframework.web.method.support.ModelAndViewContainer;
 
-import com.ycw.common.page.PageParams;
+import com.ycw.common.page.PageParam;
 
 /**
  * 分页方法参数处理
@@ -27,11 +27,11 @@ import com.ycw.common.page.PageParams;
  * </pre>
  */
 @Component
-public class PageParamsMethodArgumentResolver implements HandlerMethodArgumentResolver {
+public class PageParamMethodArgumentResolver implements HandlerMethodArgumentResolver {
 
 	@Override
 	public boolean supportsParameter(MethodParameter parameter) {
-		return parameter.getParameterType().isAssignableFrom(PageParams.class);
+		return parameter.getParameterType().isAssignableFrom(PageParam.class);
 	}
 
 	@Override
@@ -46,12 +46,12 @@ public class PageParamsMethodArgumentResolver implements HandlerMethodArgumentRe
 		/* 组装分页参数 */
 		String pageNum = webRequest.getParameter("pageNum");
 		String pageSize = webRequest.getParameter("pageSize");
-		PageParams pageParams = null;
+		PageParam pageParam = null;
 		if(StringUtils.isNotBlank(pageNum) && StringUtils.isNotBlank(pageSize)) {
-			pageParams = new PageParams(Integer.valueOf(pageNum), Integer.valueOf(pageSize));
+			pageParam = new PageParam(Integer.valueOf(pageNum), Integer.valueOf(pageSize));
 		}
 
-		return pageParams;
+		return pageParam;
 	}
 
 }

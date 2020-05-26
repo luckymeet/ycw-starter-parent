@@ -7,7 +7,7 @@ import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.stereotype.Component;
 
 import com.github.pagehelper.PageHelper;
-import com.ycw.common.page.PageParams;
+import com.ycw.common.page.PageParam;
 
 @Aspect
 @Component
@@ -18,7 +18,7 @@ public class ServiceAop {
 	}
 
 	/**
-	 * 当方法含有PageParams参数时，使用分页查询
+	 * 当方法含有pageParam参数时，使用分页查询
 	 * @author yuminjun
 	 * @date 2020/04/14 14:43:17
 	 * @param point
@@ -32,9 +32,9 @@ public class ServiceAop {
 		if (args != null && args.length > 0) {
 			for (int i = args.length - 1; i >= 0; i--) {
 				/* 设置分页参数 */
-				if (args[i] instanceof PageParams) {
-					PageParams pageParams = (PageParams) args[i];
-					PageHelper.startPage(pageParams.getPageNum(), pageParams.getPageSize());
+				if (args[i] instanceof PageParam) {
+					PageParam pageParam = (PageParam) args[i];
+					PageHelper.startPage(pageParam.getPageNum(), pageParam.getPageSize());
 					break;
 				}
 			}

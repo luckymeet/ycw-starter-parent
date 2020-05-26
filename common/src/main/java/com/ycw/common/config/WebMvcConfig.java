@@ -12,7 +12,7 @@ import org.springframework.web.filter.HiddenHttpMethodFilter;
 import org.springframework.web.method.support.HandlerMethodArgumentResolver;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
-import com.ycw.common.interceptor.web.PageParamsMethodArgumentResolver;
+import com.ycw.common.interceptor.web.PageParamMethodArgumentResolver;
 
 /**
  * Web拦截器配置
@@ -32,11 +32,11 @@ import com.ycw.common.interceptor.web.PageParamsMethodArgumentResolver;
 public class WebMvcConfig implements WebMvcConfigurer {
 
 	@Autowired
-	private PageParamsMethodArgumentResolver pageParamsMethodArgumentResolver;
+	private PageParamMethodArgumentResolver pageParamMethodArgumentResolver;
 
 	@Override
 	public void addArgumentResolvers(List<HandlerMethodArgumentResolver> argumentResolvers) {
-		argumentResolvers.add(pageParamsMethodArgumentResolver);// 分页参数处理
+		argumentResolvers.add(pageParamMethodArgumentResolver);// 分页参数处理
 	}
 
 //	@Bean

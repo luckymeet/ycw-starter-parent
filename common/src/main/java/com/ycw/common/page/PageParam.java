@@ -17,7 +17,7 @@ import lombok.ToString;
  * </pre>
  */
 @ToString
-public class PageParams {
+public class PageParam {
 
 	/**
 	 * 当前页码
@@ -30,9 +30,9 @@ public class PageParams {
 	private int pageSize;
 
 	@SuppressWarnings("unused")
-	private PageParams() {}
+	private PageParam() {}
 
-	public PageParams(int pageNum, int pageSize) {
+	public PageParam(int pageNum, int pageSize) {
 		super();
 		this.pageNum = pageNum;
 		this.pageSize = pageSize;
