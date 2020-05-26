@@ -46,7 +46,7 @@ public class BeanHandleUtils extends BeanUtils {
 			target = targetClass.newInstance();
 			copyProperties(source, target);
 		} catch (InstantiationException | IllegalAccessException e) {
-			log.error("bean转换异常：【" + source.getClass().getName() + "】转换成【" + targetClass.getName() + "】失败", e);
+			log.error("bean转换异常：[{}]转换成[{}]失败", source.getClass().getName(), targetClass.getName(), e);
 		}
 		return target;
 	}
@@ -73,7 +73,7 @@ public class BeanHandleUtils extends BeanUtils {
 			}
 			return target;
 		} catch (Exception e) {
-			log.error("bean转换异常：【" + source.getClass().getName() + "】转换成【" + targetClass.getName() + "】失败", e);
+			log.error("bean转换异常：[{}]转换成[{}]失败", source.getClass().getName(), targetClass.getName(), e);
 			return Collections.emptyList();
 		}
 	}
@@ -96,7 +96,7 @@ public class BeanHandleUtils extends BeanUtils {
 			obj = targetClass.newInstance();
 			org.apache.commons.beanutils.BeanUtils.populate(obj, map);
 		} catch (IllegalAccessException | InvocationTargetException | InstantiationException e) {
-			log.error("map转换异常：【" + map.getClass().getName() + "】转换成【" + targetClass.getName() + "】失败", e);
+			log.error("map转换异常：[{}]转换成[{}]失败", map.getClass().getName(), targetClass.getName(), e);
 		}
 		return obj;
 	}

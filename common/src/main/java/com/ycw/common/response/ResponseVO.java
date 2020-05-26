@@ -5,7 +5,7 @@ import java.io.Serializable;
 import com.ycw.common.utils.SpringUtils;
 
 import brave.Tracer;
-import lombok.ToString;
+import lombok.Data;
 
 /**
  * 统一响应对象
@@ -21,7 +21,7 @@ import lombok.ToString;
  * -------------------------------------------------
  * </pre>
  */
-@ToString
+@Data
 public class ResponseVO<T> implements Serializable {
 
 	private static final long serialVersionUID = 1L;
@@ -73,47 +73,8 @@ public class ResponseVO<T> implements Serializable {
 		}
 	}
 
-	public int getCode() {
-		return this.code;
-	}
-
-	public void setCode(int code) {
-		this.code = code;
-	}
-
-	public String getMessage() {
-		return this.message;
-	}
-
-	public void setMessage(String message) {
-		this.message = message;
-	}
-
-	public T getData() {
-		return this.data;
-	}
-
-	public void setData(T data) {
-		this.data = data;
-	}
-
-	public long getTimestamp() {
-		return this.timestamp;
-	}
-
-	public void setTimestamp(long timestamp) {
-		this.timestamp = timestamp;
-	}
-
 	public boolean isSuccess() {
 		return this.code == SUCCESS;
 	}
 
-	public String getTraceId() {
-		return this.traceId;
-	}
-
-	public void setTraceId(String traceId) {
-		this.traceId = traceId;
-	}
 }
