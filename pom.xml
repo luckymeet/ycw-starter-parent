@@ -163,4 +163,7 @@
 			<url>http://39.105.58.23:8081/repository/ycw-snapshots/</url>
 		</snapshotRepository>
 	</distributionManagement>
+	<modules>
+		<module>common</module>
+	</modules>
 </project>

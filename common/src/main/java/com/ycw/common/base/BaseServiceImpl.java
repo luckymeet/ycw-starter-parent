@@ -1,5 +1,7 @@
 package com.ycw.common.base;
 
+import org.springframework.transaction.annotation.Transactional;
+
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 
 public class BaseServiceImpl<M extends BaseCrudMapper<T>, T> extends ServiceImpl<M, T> implements BaseService<T> {
@@ -9,12 +11,13 @@ public class BaseServiceImpl<M extends BaseCrudMapper<T>, T> extends ServiceImpl
 	 *
 	 * @author yuminjun
 	 * @date 2020/06/03 10:15:14
-	 * @param t
+	 * @param entity
 	 * @return
 	 */
+	@Transactional(rollbackFor = Exception.class)
 	@Override
-    public boolean updateAllById(T t) {
-        return retBool(baseMapper.alwaysUpdateSomeColumnById(t));
+    public boolean updateAllById(T entity) {
+        return retBool(baseMapper.alwaysUpdateSomeColumnById(entity));
     }
 
 }

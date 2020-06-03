@@ -9,9 +9,9 @@ public interface BaseService<T> extends IService<T> {
 	 *
 	 * @author yuminjun
 	 * @date 2020/06/03 10:15:14
-	 * @param t
+	 * @param entity
 	 * @return
 	 */
-	boolean updateAllById(T t);
+	boolean updateAllById(T entity);
 
 }
