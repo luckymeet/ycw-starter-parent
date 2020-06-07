@@ -72,15 +72,18 @@ public class TransactionManagerConfig {
 
         /* 可以提交事务或回滚事务的方法 */
         methodMap.put("add*", requiredTx);
+        methodMap.put("edit*", requiredTx);
         methodMap.put("save*", requiredTx);
         methodMap.put("update*", requiredTx);
         methodMap.put("modify*", requiredTx);
-        methodMap.put("edit*", requiredTx);
         methodMap.put("insert*", requiredTx);
         methodMap.put("delete*", requiredTx);
         methodMap.put("remove*", requiredTx);
         methodMap.put("repair*", requiredTx);
         methodMap.put("binding*", requiredTx);
+        methodMap.put("set*", requiredTx);
+        methodMap.put("change*", requiredTx);
+        methodMap.put("*Trans", requiredTx);
 
         /* 独立事务 */
         methodMap.put("*NewTrans", requiredNewTx);
