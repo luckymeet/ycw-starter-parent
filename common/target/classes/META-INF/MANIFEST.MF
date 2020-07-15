@@ -1,9 +1,0 @@
-Manifest-Version: 1.0
-Implementation-Title: ycw-common
-Implementation-Version: 1.0.0-SNAPSHOT
-Built-By: read
-Implementation-Vendor-Id: com.ycw
-Build-Jdk: 1.8.0_45
-Implementation-URL: http://maven.apache.org
-Created-By: Maven Integration for Eclipse
-
